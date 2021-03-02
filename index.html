@@ -2,38 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="code.js"></script>
-    <title>Class 13 Lab</title>
+    <title>Gradebook</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <h1>Gradebook Application</h1>
 
-    <form id="gradebook">
-        <label for="firstName">First Name: </label>
-        <input type="text" name="name" id="firstName"><br><br>
+<h1>Gradebook Application</h1>
 
-        <label for="lastName">Last Name: </label>
-        <input type="text" name="name" id="lastName"><br><br>
+<form id = "student_form">
+    <p>    <input type="text" name="first_name" id="first_name"/>
+        <label for = "first_name">First Name</label></p>
 
-        <label for="pointsEarned">Points Earned: </label>
-        <input type="number" name="grade" id="pointsEarned"><br><br>
+    <p>    <input type="text" name="last_name" id="last_name"/>
+        <label for = "last_name">Last Name</label></p>
 
-        <label for="pointsPossible">Points Possible: </label>
-        <input type="number" name="grade" id="pointsPossible"><br><br>
+    <p><input type="text" name="first_name" id="points_earned"/>
+        <label for = "points_earned">Points Earned</label></p>
 
-        <input type="submit" value="Submit">
-    </form>
+    <p>    <input type="text" name="first_name" id="points_possible"/>
+        <label for = "points_possible">Points Possible</label></p>
 
-    <p>
-        A = Between 100 and 90 <br>
-        B = Between 89 and 80 <br>
-        C = Between 79 and 70 <br>
-        D = Between 69 and 60 <br>
-        F = Between 59 and 0 <br>
-    </p>
+    <button id="submit_student">Submit</button>
+</form>
 
-    <p id="output"></p>
-    <p id="letterGrade"></p>
+<ul>
+    <li id="first"></li>
+    <li id="last"></li>
+    <li id="percentage"></li>
+    <li id="letter"></li>
+</ul>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+<script src="code.js"></script>
 </body>
 </html>
